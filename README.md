@@ -1,3 +1,16 @@
+# Countries App
+
+This is a practice project utilizing the REST Countries API utilizing the following technologies:
+
+<ul>
+	<li>React</li>
+	<li>Redux</li>
+	<li>Redux-form</li>
+	<li>React-Router-Dom</li>
+	<li>Axios</li>
+	<li>Redux-thunk</li>
+</ul>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
