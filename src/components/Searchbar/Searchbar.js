@@ -4,7 +4,6 @@ import { fetchCountries, selectRegion } from '../../actions/';
 import SearchbarForm from './SearchbarForm';
 
 class Searchbar extends React.Component {
-
 	onSubmit = (formValue) => {
 		if ('search' in formValue) {
 			this.props.fetchCountries(formValue.search);
@@ -15,6 +14,7 @@ class Searchbar extends React.Component {
 			this.props.selectRegion("");
 		}
 	}
+
 	render() {
 		return(
 			<div>
