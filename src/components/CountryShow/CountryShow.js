@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchCountriesByCode, selectCountry } from '../../actions/';
-import CountryLink from './CountryLink';
+import CountryLink from '../CountryLink/CountryLink';
 
 class CountryShow extends React.Component {
 	renderBorderLinks = () => {

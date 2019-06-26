@@ -1,6 +1,6 @@
 import React from 'react';
 import Root from '../../Root';
-import Searchbar from '../../components/Searchbar/Searchbar';
+import Searchbar from '../Searchbar/Searchbar';
 import { mount } from 'enzyme';
 
 let wrapper;

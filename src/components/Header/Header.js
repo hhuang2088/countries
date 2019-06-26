@@ -14,7 +14,11 @@ const Header = (props) => {
 					<h3 className={`ui left floated header ${props.display}`}>Where in the world?</h3>
 				</div>
 				<div className="column">
-					<h5 className={`ui right floated header ${props.display}`} id="dark-mode-toggle" onClick={onClick}>
+					<h5
+						className={`ui right floated header ${props.display}`}
+						id="dark-mode-toggle"
+						onClick={onClick}
+					>
 						<i className="moon outline icon" /> Dark Mode
 					</h5>
 				</div>

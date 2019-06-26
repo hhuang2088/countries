@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Root from '../../Root';
-import Header from '../../components/Header/Header.js';
+import Header from '../Header/Header.js';
 
 let wrapper;
 

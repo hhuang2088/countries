@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Searchbar from '../Searchbar/Searchbar';
-import CountryItem from './CountryItem';
+import CountryItem from '../CountryItem/CountryItem';
 
 class CountryList extends React.Component {
 	renderCountryItems = () => {
