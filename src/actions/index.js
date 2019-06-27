@@ -23,7 +23,6 @@ export const selectRegion = (region) => dispatch => {
 export const fetchCountriesByCode = (codes) => async dispatch => {
 	if(codes.length > 0) {
 		const codesQuery = codes.join(';');
-		console.log(codesQuery);
 		const response = await countries.get(`/alpha?codes=${codesQuery}`);
 		dispatch({ type: FETCH_COUNTRIES_BY_CODE, payload: response.data});
 	} else {
