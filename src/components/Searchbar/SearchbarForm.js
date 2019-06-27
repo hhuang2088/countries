@@ -2,7 +2,6 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class SearchbarForm extends React.Component {
-
 	onSubmit = (formValues) => {
 		this.props.onSubmit(formValues);
 	}

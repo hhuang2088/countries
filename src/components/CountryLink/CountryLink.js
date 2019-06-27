@@ -8,6 +8,7 @@ class CountryLink extends React.Component {
 		this.props.fetchCountriesByCode(this.props.country.borders);
 		this.props.selectCountry(this.props.country);
 	}
+
 	render() {
 		return(
 			<div>

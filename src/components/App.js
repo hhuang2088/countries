@@ -5,7 +5,6 @@ import CountryList from './CountryList/CountryList';
 import CountryShow from './CountryShow/CountryShow';
 
 class App extends React.Component {
-
 	render() {
 		return(
 			<div>

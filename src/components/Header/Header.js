@@ -7,6 +7,7 @@ const Header = (props) => {
 	const onClick = () => {
 		props.toggleDarkMode(props.display);
 	};
+
 	return(
 		<div className={`ui segment ${props.display}`}>
 			<div className={"ui two column grid container"}>
