@@ -12,21 +12,26 @@ export const fetchCountries = (search) => async dispatch => {
 	dispatch({ type: FETCH_COUNTRIES, payload: response.data });
 };
 
-export const selectCountry = (country) => async dispatch => {
+export const selectCountry = (country) => dispatch => {
 	dispatch({ type: SELECT_COUNTRY, payload: country });
 };
 
 export const selectRegion = (region) => dispatch => {
 	dispatch({ type: SELECT_REGION, payload: region });
-}
+};
 
 export const fetchCountriesByCode = (codes) => async dispatch => {
-	const codesQuery = codes.join(';');
-	const response = await countries.get(`/alpha?codes=${codesQuery}`);
-	dispatch({ type: FETCH_COUNTRIES_BY_CODE, payload: response.data});
-}
+	if(codes.length > 0) {
+		const codesQuery = codes.join(';');
+		console.log(codesQuery);
+		const response = await countries.get(`/alpha?codes=${codesQuery}`);
+		dispatch({ type: FETCH_COUNTRIES_BY_CODE, payload: response.data});
+	} else {
+		dispatch({ type: FETCH_COUNTRIES_BY_CODE, payload: [] });
+	}
+};
 
-export const toggleDarkMode = (display) => async dispatch => {
+export const toggleDarkMode = (display) => dispatch => {
 	let response;
 
 	if(display === 'inverted') {
@@ -37,4 +42,4 @@ export const toggleDarkMode = (display) => async dispatch => {
 		response = 'inverted';
 	}
 	dispatch({ type: TOGGLE_DARKMODE, payload: response });
-}
+};
