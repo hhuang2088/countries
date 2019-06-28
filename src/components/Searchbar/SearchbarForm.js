@@ -11,6 +11,7 @@ class SearchbarForm extends React.Component {
 			<form
 				onSubmit={this.props.handleSubmit(this.onSubmit)}
 				className={`ui two column grid container ${this.props.display}`}
+				id="searchbar-form"
 			>
 				<div className={`six wide left floated column ${this.props.display}`}>
 					<div className={`ui left icon fluid input ${this.props.display}`}>
@@ -19,7 +20,7 @@ class SearchbarForm extends React.Component {
 							component="input"
 							type="text"
 							placeholder="Search for a country..."
-							id="search-bar"
+							id="search-bar-input"
 						/>
 						<i className="search icon" />
 					</div>
