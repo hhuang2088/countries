@@ -38,4 +38,4 @@ describe('the #dark-mode-toggle element', () => {
 		darkModeButton.simulate('click');
 		expect(wrapper.find('.inverted').length).toBeGreaterThanOrEqual(1);
 	});
-})
+});
