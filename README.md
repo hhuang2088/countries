@@ -5,10 +5,19 @@ This is a practice project utilizing the REST Countries API utilizing the follow
 <ul>
 	<li>React</li>
 	<li>Redux</li>
+	<li>React-Redux</li>
 	<li>Redux-form</li>
 	<li>React-Router-Dom</li>
 	<li>Axios</li>
 	<li>Redux-thunk</li>
+</ul>
+
+### Development
+<ul>
+	<li>Moxios</li>
+	<li>Enzyme</li>
+	<li>Enzyme-adapter-react-16</li>
+	<li>Redux-mock-store</li>
 </ul>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
