@@ -19,6 +19,7 @@ class SearchbarForm extends React.Component {
 							component="input"
 							type="text"
 							placeholder="Search for a country..."
+							id="search-bar"
 						/>
 						<i className="search icon" />
 					</div>
@@ -28,6 +29,7 @@ class SearchbarForm extends React.Component {
 						name="region"
 						component="select"
 						placeholder="Filter By Region"
+						id="region-filter"
 					>
 						<option />
 						<option value="Africa" onClick={this.onClick}>Africa</option>
